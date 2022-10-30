@@ -10,16 +10,15 @@ import {
   Text,
   StyleSheet,
 } from 'react-native'
-import { useTheme } from '@/Hooks'
 import LoadingWrapper from '@/Components/LoadingWrapper'
 import { navigate, RootStackParamList } from '@/Navigators/utils'
-import { SafeAreaView } from 'react-native-safe-area-context'
 import { useGetCityQuery } from '@/Services/city'
 import { Record } from '@/Interface/city'
 import { Routes } from '@/Utils/routes'
 import { Colors } from '@/Theme/Variables'
 import { TextInput } from 'react-native-gesture-handler'
 import { useNavigation, useRoute } from '@react-navigation/native'
+import { useTheme } from '@/Hooks'
 
 const SearchSceen = () => {
   const { Gutters, Fonts } = useTheme()
@@ -91,7 +90,7 @@ const SearchSceen = () => {
   }
 
   return (
-    <SafeAreaView style={Style.container}>
+    <View style={Style.container}>
       <StatusBar barStyle={'light-content'} translucent />
 
       <TextInput
@@ -102,7 +101,12 @@ const SearchSceen = () => {
           setPageNumber(1)
         }}
         value={searchText}
-        style={Style.search}
+        style={[
+          Style.search,
+          {
+            borderColor: searchText.length > 0 ? Colors.blue : 'gray',
+          },
+        ]}
       />
       <LoadingWrapper loading={isLoading}>
         <FlatList
@@ -131,7 +135,7 @@ const SearchSceen = () => {
           }}
         />
       </LoadingWrapper>
-    </SafeAreaView>
+    </View>
   )
 }
 
@@ -150,12 +154,6 @@ export const Style = StyleSheet.create({
     color: 'black',
     marginHorizontal: 16,
     backgroundColor: Colors.white,
-    // borderColor:
-    //   !!errors?.['username']?.message &&
-    //   !ref['username']?.isFocused() &&
-    //   touchedFields?.['username']
-    //     ? '#E34444'
-    //     : 'gray',
     borderWidth: 1,
     borderColor: Colors.border,
     height: 42,

@@ -10,6 +10,10 @@ export default function ({ FontSize, Colors }: ThemeVariables) {
       fontSize: FontSize.small,
       color: Colors.text,
     },
+    textTiny: {
+      fontSize: FontSize.tiny,
+      color: Colors.text,
+    },
     textRegular: {
       fontSize: FontSize.regular,
       color: Colors.text,
@@ -17,6 +21,12 @@ export default function ({ FontSize, Colors }: ThemeVariables) {
     textLarge: {
       fontSize: FontSize.large,
       color: Colors.text,
+    },
+    textBold: {
+      fontWeight: '600',
+    },
+    textMedium: {
+      fontWeight: '500',
     },
     titleSmall: {
       fontSize: FontSize.small * 2,
@@ -27,9 +37,6 @@ export default function ({ FontSize, Colors }: ThemeVariables) {
       fontSize: FontSize.regular * 2,
       fontWeight: 'bold',
       color: Colors.text,
-    },
-    textBold: {
-      fontWeight: 'bold',
     },
     titleLarge: {
       fontSize: FontSize.large * 2,

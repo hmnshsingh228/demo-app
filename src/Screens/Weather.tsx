@@ -1,5 +1,5 @@
 /* eslint-disable react-native/no-inline-styles */
-import React, { useLayoutEffect, useRef } from 'react'
+import React, { useRef } from 'react'
 import { View, Text, TouchableOpacity, StyleSheet, Image } from 'react-native'
 import { useTranslation } from 'react-i18next'
 import { useTheme } from '@/Hooks'
@@ -15,7 +15,7 @@ import { Routes } from '@/Utils/routes'
 import { useGetWeatherQuery } from '@/Services/weather'
 import { Config } from '@/Config'
 import { Record } from '@/Interface/city'
-import { useNavigation, useRoute } from '@react-navigation/native'
+import { useRoute } from '@react-navigation/native'
 
 const WeatherSceen = () => {
   const { t } = useTranslation()
@@ -143,11 +143,11 @@ const WeatherSceen = () => {
   const renderList = () => {
     return (
       <View style={[Layout.row, Gutters.regularTMargin]}>
-        {data?.daily?.map((el, index) => {
+        {data?.daily?.map((item, index) => {
           if (index !== 0) {
             return (
               <View style={{ flex: 0.14 }}>
-                {weatherView(el?.weather?.[0]?.main)}
+                {weatherView(item?.weather?.[0]?.main)}
               </View>
             )
           }
@@ -157,7 +157,7 @@ const WeatherSceen = () => {
   }
 
   return (
-    <SafeAreaView style={[Layout.fill]}>
+    <View>
       <LinearGradient colors={['#33CCCF', '#33CCCC', '#4DD0E1']}>
         <View
           style={[
@@ -170,7 +170,7 @@ const WeatherSceen = () => {
           {renderList()}
         </View>
       </LinearGradient>
-    </SafeAreaView>
+    </View>
   )
 }
 

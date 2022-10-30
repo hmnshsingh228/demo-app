@@ -1,9 +1,4 @@
-/**
- * This file contains the application's variables.
- *
- * Define color, sizes, etc. here instead of duplicating them throughout the components.
- * That allows to change them more easily later on.
- */
+import { normalize } from '@/Utils'
 
 /**
  * Colors
@@ -33,12 +28,13 @@ export const FontSize = {
   small: 16,
   regular: 20,
   large: 40,
+  tiny: 12,
 }
 
 /**
  * Metrics Sizes
  */
-const tiny = 5 // 10
+const tiny = normalize(5) // 10
 const small = tiny * 2 // 10
 const regular = tiny * 3 // 15
 const large = regular * 2 // 30
