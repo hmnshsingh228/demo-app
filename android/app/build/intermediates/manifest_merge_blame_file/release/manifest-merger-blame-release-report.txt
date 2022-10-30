@@ -1,0 +1,107 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.demoapp"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->/Users/himanshusingh/Desktop/demo-app/android/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="31" />
+9-->/Users/himanshusingh/Desktop/demo-app/android/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/Users/himanshusingh/Desktop/demo-app/android/app/src/main/AndroidManifest.xml:5:5-67
+11-->/Users/himanshusingh/Desktop/demo-app/android/app/src/main/AndroidManifest.xml:5:22-64
+12    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+12-->/Users/himanshusingh/Desktop/demo-app/android/app/src/main/AndroidManifest.xml:6:5-80
+12-->/Users/himanshusingh/Desktop/demo-app/android/app/src/main/AndroidManifest.xml:6:22-77
+13    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+13-->/Users/himanshusingh/Desktop/demo-app/android/app/src/main/AndroidManifest.xml:7:5-81
+13-->/Users/himanshusingh/Desktop/demo-app/android/app/src/main/AndroidManifest.xml:7:22-78
+14
+15    <application
+15-->/Users/himanshusingh/Desktop/demo-app/android/app/src/main/AndroidManifest.xml:9:5-40:19
+16        android:name="com.demoapp.MainApplication"
+16-->/Users/himanshusingh/Desktop/demo-app/android/app/src/main/AndroidManifest.xml:10:7-38
+17        android:allowBackup="false"
+17-->/Users/himanshusingh/Desktop/demo-app/android/app/src/main/AndroidManifest.xml:14:7-34
+18        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+18-->[androidx.core:core:1.7.0] /Users/himanshusingh/.gradle/caches/transforms-3/b5a8e99dac667ebea08e9f9757d3b404/transformed/core-1.7.0/AndroidManifest.xml:24:18-86
+19        android:icon="@mipmap/ic_launcher"
+19-->/Users/himanshusingh/Desktop/demo-app/android/app/src/main/AndroidManifest.xml:12:7-41
+20        android:label="@string/app_name"
+20-->/Users/himanshusingh/Desktop/demo-app/android/app/src/main/AndroidManifest.xml:11:7-39
+21        android:roundIcon="@mipmap/ic_launcher_round"
+21-->/Users/himanshusingh/Desktop/demo-app/android/app/src/main/AndroidManifest.xml:13:7-52
+22        android:theme="@style/AppTheme"
+22-->/Users/himanshusingh/Desktop/demo-app/android/app/src/main/AndroidManifest.xml:15:7-38
+23        android:usesCleartextTraffic="true" >
+23-->/Users/himanshusingh/Desktop/demo-app/android/app/src/main/AndroidManifest.xml:16:7-42
+24        <activity
+24-->/Users/himanshusingh/Desktop/demo-app/android/app/src/main/AndroidManifest.xml:18:7-28:18
+25            android:name="com.demoapp.SplashActivity"
+25-->/Users/himanshusingh/Desktop/demo-app/android/app/src/main/AndroidManifest.xml:19:9-39
+26            android:exported="true"
+26-->/Users/himanshusingh/Desktop/demo-app/android/app/src/main/AndroidManifest.xml:22:9-32
+27            android:label="@string/app_name"
+27-->/Users/himanshusingh/Desktop/demo-app/android/app/src/main/AndroidManifest.xml:21:9-41
+28            android:theme="@style/SplashTheme" >
+28-->/Users/himanshusingh/Desktop/demo-app/android/app/src/main/AndroidManifest.xml:20:9-43
+29            <intent-filter>
+29-->/Users/himanshusingh/Desktop/demo-app/android/app/src/main/AndroidManifest.xml:24:9-27:25
+30                <action android:name="android.intent.action.MAIN" />
+30-->/Users/himanshusingh/Desktop/demo-app/android/app/src/main/AndroidManifest.xml:25:11-63
+30-->/Users/himanshusingh/Desktop/demo-app/android/app/src/main/AndroidManifest.xml:25:19-60
+31
+32                <category android:name="android.intent.category.LAUNCHER" />
+32-->/Users/himanshusingh/Desktop/demo-app/android/app/src/main/AndroidManifest.xml:26:11-71
+32-->/Users/himanshusingh/Desktop/demo-app/android/app/src/main/AndroidManifest.xml:26:21-68
+33            </intent-filter>
+34        </activity>
+35        <activity
+35-->/Users/himanshusingh/Desktop/demo-app/android/app/src/main/AndroidManifest.xml:30:7-39:18
+36            android:name="com.demoapp.MainActivity"
+36-->/Users/himanshusingh/Desktop/demo-app/android/app/src/main/AndroidManifest.xml:31:9-37
+37            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode"
+37-->/Users/himanshusingh/Desktop/demo-app/android/app/src/main/AndroidManifest.xml:33:9-118
+38            android:exported="true"
+38-->/Users/himanshusingh/Desktop/demo-app/android/app/src/main/AndroidManifest.xml:35:9-32
+39            android:label="@string/app_name"
+39-->/Users/himanshusingh/Desktop/demo-app/android/app/src/main/AndroidManifest.xml:32:9-41
+40            android:launchMode="singleTask"
+40-->/Users/himanshusingh/Desktop/demo-app/android/app/src/main/AndroidManifest.xml:33:126-157
+41            android:windowSoftInputMode="adjustResize" >
+41-->/Users/himanshusingh/Desktop/demo-app/android/app/src/main/AndroidManifest.xml:34:9-51
+42            <intent-filter>
+42-->/Users/himanshusingh/Desktop/demo-app/android/app/src/main/AndroidManifest.xml:36:9-38:25
+43                <action android:name="android.intent.action.MAIN" />
+43-->/Users/himanshusingh/Desktop/demo-app/android/app/src/main/AndroidManifest.xml:25:11-63
+43-->/Users/himanshusingh/Desktop/demo-app/android/app/src/main/AndroidManifest.xml:25:19-60
+44            </intent-filter>
+45        </activity>
+46
+47        <provider
+47-->[androidx.emoji2:emoji2:1.0.0] /Users/himanshusingh/.gradle/caches/transforms-3/31798a0ea3f25ea98e44c876b4851b08/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:26:9-34:20
+48            android:name="androidx.startup.InitializationProvider"
+48-->[androidx.emoji2:emoji2:1.0.0] /Users/himanshusingh/.gradle/caches/transforms-3/31798a0ea3f25ea98e44c876b4851b08/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:27:13-67
+49            android:authorities="com.demoapp.androidx-startup"
+49-->[androidx.emoji2:emoji2:1.0.0] /Users/himanshusingh/.gradle/caches/transforms-3/31798a0ea3f25ea98e44c876b4851b08/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:28:13-68
+50            android:exported="false" >
+50-->[androidx.emoji2:emoji2:1.0.0] /Users/himanshusingh/.gradle/caches/transforms-3/31798a0ea3f25ea98e44c876b4851b08/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:29:13-37
+51            <meta-data
+51-->[androidx.emoji2:emoji2:1.0.0] /Users/himanshusingh/.gradle/caches/transforms-3/31798a0ea3f25ea98e44c876b4851b08/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
+52                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+52-->[androidx.emoji2:emoji2:1.0.0] /Users/himanshusingh/.gradle/caches/transforms-3/31798a0ea3f25ea98e44c876b4851b08/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:32:17-75
+53                android:value="androidx.startup" />
+53-->[androidx.emoji2:emoji2:1.0.0] /Users/himanshusingh/.gradle/caches/transforms-3/31798a0ea3f25ea98e44c876b4851b08/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:33:17-49
+54            <meta-data
+54-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/himanshusingh/.gradle/caches/transforms-3/39517e1b011367242185b54afc0b3c9e/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
+55                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+55-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/himanshusingh/.gradle/caches/transforms-3/39517e1b011367242185b54afc0b3c9e/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
+56                android:value="androidx.startup" />
+56-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/himanshusingh/.gradle/caches/transforms-3/39517e1b011367242185b54afc0b3c9e/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
+57        </provider>
+58    </application>
+59
+60</manifest>
