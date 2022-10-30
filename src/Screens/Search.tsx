@@ -39,6 +39,7 @@ const SearchSceen = () => {
     isLoading,
     isFetching,
     refetch,
+    isSuccess,
   } = useGetCityQuery({
     params: {
       page: pageNumber,
@@ -55,7 +56,7 @@ const SearchSceen = () => {
         setCityList(cityList?.concat(data?.Record))
       }
     }
-  }, [cityData])
+  }, [cityData, isSuccess])
 
   const renderItems = (props: { item: Record }) => {
     const { item } = props

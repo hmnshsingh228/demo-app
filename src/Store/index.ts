@@ -37,7 +37,7 @@ const middlewares: any[] = []
 if (true) {
   const createDebugger = require('redux-flipper').default
   middlewares.push(createDebugger())
-  // middlewares.push(logger);
+  // middlewares.push(logger)
 }
 middlewares.push(cityApi.middleware)
 middlewares.push(weatherApi.middleware)
